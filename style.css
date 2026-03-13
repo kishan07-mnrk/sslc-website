@@ -68,15 +68,15 @@ margin:30px;
 
 .slideshow{
 
-    width:400px;
-    margin:auto;
+     width:400px;
+     margin:auto;
 
 }
 
 .slide{
 
 width:100%;
-border-radius:10px;
+border-radius:15px;
 display:none;
 
 }
