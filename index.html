@@ -97,13 +97,30 @@
     <h2>Our Memories</h2>
     <p>Moments that will stay with us forever</p>
 
-    <div class="slideshow">
-        <img src="photo1.jpg" class="slide">
-        <img src="photo2.jpg" class="slide">
-        <img src="photo3.jpg" class="slide">
-        <img src="photo4.jpg" class="slide">
-    </div>
+    <!-- Photos Slideshow Section -->
+<h2>SSLC Memories 2026 - Photos</h2>
+<div style="text-align:center;">
+  <img class="slide" src="images/photo1.jpg" style="width:400px; display:block; margin:0 auto;">
+  <img class="slide" src="images/photo2.jpg" style="width:400px; display:none; margin:0 auto;">
+  <img class="slide" src="images/photo3.jpg" style="width:400px; display:none; margin:0 auto;">
 </div>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slide');
+
+function showSlide(index) {
+  slides.forEach((slide, i) => slide.style.display = (i === index) ? 'block' : 'none');
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+setInterval(nextSlide, 3000); // change every 3 seconds
+</script>h
   
 </section>
 
@@ -115,28 +132,28 @@
 
 <div class="video-section">
 
-<video width="500" controls>
-  <source src="https://drive.google.com/uc?export=download&id=1TsFodPWlAcJlc2qVVq-V5QocnFC0nCqY" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<br><br>
+<!-- Videos Section -->
+<h2>SSLC Memories 2026 - Videos</h2>
 
-<video width="500" controls>
-  <source src="https://drive.google.com/uc?export=download&id=1OjYbc7mvFSVQRv82UBWOb_UuboVcqUfy" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<br><br>
+<iframe src="https://drive.google.com/file/d/1TsFodPWlAcJlc2qVVq-V5QocnFC0nCqY/preview" 
+        width="560" height="315" allow="autoplay" 
+        style="display:block; margin:20px auto;">
+</iframe>
 
-<video width="500" controls>
-  <source src="https://drive.google.com/uc?export=download&id=12h3X9ccaskNuvsGrFqXid_bfc0Vnt1Be" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-<br><br>
+<iframe src="https://drive.google.com/file/d/1OjYbc7mvFSVQRv82UBWOb_UuboVcqUfy/preview" 
+        width="560" height="315" allow="autoplay" 
+        style="display:block; margin:20px auto;">
+</iframe>
 
-<video width="500" controls>
-  <source src="https://drive.google.com/uc?export=download&id=1q5XoEx29l0OZPIYz1Ka6IiVDj-h-aw_t" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<iframe src="https://drive.google.com/file/d/12h3X9ccaskNuvsGrFqXid_bfc0Vnt1Be/preview" 
+        width="560" height="315" allow="autoplay" 
+        style="display:block; margin:20px auto;">
+</iframe>
+
+<iframe src="https://drive.google.com/file/d/1q5XoEx29l0OZPIYz1Ka6IiVDj-h-aw_t/preview" 
+        width="560" height="315" allow="autoplay" 
+        style="display:block; margin:20px auto;">
+</iframe>
 
 </div>
 
